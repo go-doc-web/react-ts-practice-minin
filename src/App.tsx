@@ -2,15 +2,14 @@ import React, { useState, createElement as e, useEffect } from "react";
 
 import Product from "./componets/Product";
 
-import { products } from "./data/product";
+import { products } from "./data/products";
 
 function App() {
   return (
-    <section className="py-6 bg-slate-300">
-      <div className="container mx-auto py-4 px-2 ">
-        <Product products={products[0]} />
-      </div>
-    </section>
+    <div className="container mx-auto max-w-2xl pt-5">
+      <Product product={products[0]} />
+      <Product product={products[1]} />
+    </div>
   );
 }
 
